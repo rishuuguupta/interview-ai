@@ -7,8 +7,12 @@ const app = express()
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
-    origin: ["https://interview-ai-git-main-rishugupta.vercel.app",
-    "http/localhost:5173"],
+    origin: (origin,callback) => {
+        if(!origin || origin.includes("vercel.app") || origin.includes("localhost")) {
+            return callback(null, true);
+        }
+        return callback(new Error("Not allowed by CORS"));
+    },
     credentials: true
 }))
 
