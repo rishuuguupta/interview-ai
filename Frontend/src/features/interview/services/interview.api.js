@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: "http://localhost:3000",
+    baseURL: "https://cuddly-cod-4qvqppvg646j3j9q-3000.app.github.dev",
     withCredentials: true,
 })
 

@@ -7,7 +7,7 @@ const app = express()
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: "https://cuddly-cod-4qvqppvg646j3j9q-5173.app.github.dev",
     credentials: true
 }))
 
