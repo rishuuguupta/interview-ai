@@ -1,7 +1,7 @@
 import axios from "axios";
-
+const API_BASE_URI = import.meta.env.VITE_API_URL || "https://interview-ai-rozi.onrender.com"
 const api = axios.create({
-    baseURL: "https://cuddly-cod-4qvqppvg646j3j9q-3000.app.github.dev",
+    baseURL: API_BASE_URI,
     withCredentials: true,
 })
 
