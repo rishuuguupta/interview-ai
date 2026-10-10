@@ -7,7 +7,8 @@ const app = express()
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
-    origin: "https://cuddly-cod-4qvqppvg646j3j9q-5173.app.github.dev",
+    origin: ["https://interview-ai-git-main-rishugupta.vercel.app",
+    "http/localhost:5173"],
     credentials: true
 }))
 
